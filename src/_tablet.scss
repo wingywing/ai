@@ -173,5 +173,33 @@
                 grid-row: 3 / span 2;
             }
         }
+        .section.popup {
+            .sd-screenshot {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                grid-row: 2/span 9;
+                grid-column: 2/12;
+                justify-content: center;
+                justify-self: center;
+                margin-left: .5rem;
+                width: fit-content;
+                height: fit-content;
+                img {
+                    object-fit: contain;
+                }
+                span {
+                    left: 5.5%;
+                    top: 27%;
+                    position: absolute;
+                    font-size: 1rem;
+                }
+            }
+            .attribution {
+                grid-column: 2/12;
+                grid-row: 11;
+                max-width: 100%;
+            }
+        }
     }
 }
