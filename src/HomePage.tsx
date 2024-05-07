@@ -103,6 +103,7 @@ export default function HomePage() {
             Above: the 17 illustrations I used to train the image model.
           </p>
           <h2>Who am I in the eyes of AI?</h2>
+          <div className="paragraphs">
           <div className="left">
             <p>
               AI algorithms and generative image models don't have eyes, so to
@@ -135,6 +136,7 @@ export default function HomePage() {
               of prompt engineering is what turns it into a piece “in the style
               of Wing Pang”.
             </p>
+          </div>
           </div>
         </div>
         <div className="section popup">
