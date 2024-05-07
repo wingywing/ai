@@ -59,4 +59,10 @@
             z-index: -1;
         }
     }
+    blockquote {
+        .not {
+            text-decoration: underline .2rem;
+            text-underline-offset: .3rem;
+        }
+    }
 }

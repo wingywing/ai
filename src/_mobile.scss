@@ -208,7 +208,7 @@
         }
     }
     .section.images {
-        grid-row: span 18;
+        grid-row: span 16;
         .ai-images {
             grid-template-columns: repeat(5, minmax(0, 1fr));
             img {
@@ -232,6 +232,34 @@
                 padding: 2rem;
                 height: fit-content;
                 align-self: center;
+            }
+        }
+    }
+    .section.conclusion{
+        grid-row: span 14;
+        h2 {
+            display: none;
+        }
+        .attribution, blockquote, .paragraphs, .furniture  {
+            grid-column: 2/12;
+        }
+        .attribution{
+            align-self: end;
+        }
+        blockquote{
+            grid-row: 4 / span 4;
+            font-size: 3rem;
+        }
+        .paragraphs{
+            grid-row: 8 / span 4;
+        }
+        .furniture {
+            grid-row: 14;
+            .right {
+                text-align: right;
+            }
+            .left {
+                text-transform: uppercase;
             }
         }
     }
