@@ -166,5 +166,12 @@
                 grid-column: -3 / span 1;
             }
         }
+        .section.who{
+            h2 {
+                font-size: 4.5rem;
+                line-height: 100%;
+                grid-row: 3 / span 2;
+            }
+        }
     }
 }

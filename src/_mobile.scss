@@ -176,6 +176,10 @@
         .attribution, h2, .left, .right, .paragraphs {
             grid-column: 2/12;
         }
+        .attribution {
+            width: 100%;
+            justify-self: center;
+        }
         h2 {
             font-size: 3rem;
             font-weight: 400;
