@@ -197,7 +197,7 @@ export default function HomePage() {
           </p>
           <h2>Conclusion</h2>
           <blockquote>
-            “In the style of wngpng” is <span className="not">not</span> in the style of Wing Pang
+            “In the style&nbsp;of wngpng” <span className="new-line desktop"/>is <span className="not">not</span> in the style of <span className="new-line desktop"/>Wing Pang
           </blockquote>
           <div className="paragraphs">
             <p>While AI can be used to assist in forming ideas, colours and compositions of illustrations, it would never fully replace the work of a skilled artist.</p>

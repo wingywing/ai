@@ -201,5 +201,33 @@
                 max-width: 100%;
             }
         }
+        .section.images {
+            .ai-images {
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+            }
+        }
+        .section.conclusion {
+            .attribution {
+                grid-column: 2/12;
+                width: 100%;
+                max-width: none;
+            }
+            blockquote {
+                grid-row: 3 / span 4;
+                align-self: flex-end;
+                font-size: 4.5rem;
+                line-height: 100%;
+                text-wrap: balance;
+            }
+            .furniture {
+                grid-row: 14;
+                .right {
+                    text-align: right;
+                }
+                .left {
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }

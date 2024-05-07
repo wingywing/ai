@@ -161,6 +161,20 @@
                 gap: 1rem;
             }
         }
+        .section.images {
+            .ai-images {
+                grid-template-columns: repeat(10, minmax(0, 1fr));
+            }
+        }
+        .section.conclusion {
+            blockquote {
+                font-size: 4.5rem;
+                width: 110%;
+            }
+            .paragraphs {
+                grid-column: 8 / span 4;
+            }
+        }
     }
     @media screen and (min-width: 1728px){
         .section.title {
@@ -222,6 +236,12 @@
             }
             img:nth-of-type(16){
                 grid-row: 14 / span 1;
+            }
+        }
+        .section.conclusion {
+            blockquote {
+                font-size: 7.4375rem;
+                grid-row: 3 / span 5;
             }
         }
     }
