@@ -1,5 +1,6 @@
 import React from "react";
 import "./home-page.scss";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   // Function for getting self-made illustrations
@@ -29,8 +30,8 @@ export default function HomePage() {
 
   return (
     <home-page>
-      <div className="main-grid">
-        <div className="section title" id='title'>
+      <motion.div layout className="main-grid">
+        <motion.div layout className="section title" id='title'>
           <div className="furniture">
             <span className="left">
               2024 May ● Wing Pang ©{" "}
@@ -38,12 +39,14 @@ export default function HomePage() {
             </span>
             <span className="right">Practice-led research</span>
           </div>
-          <h1>“In the style of wngpng”</h1>
-          <p className="caption">
-            Fears and reflections on the ethics of AI art
-          </p>
-          <img src="/illustrations/wngpng_0.png" alt="illustration of eery faces" />
-        </div>
+          <h1>“In the <span className="new-line mobile desktop"/>style <span className="new-line desktop"/>of <span className="new-line desktop"/>wngpng”</h1>
+          <motion.p layout className="caption">
+            Fears and <span className="new-line"/> reflections on the <span className="new-line"/>ethics of AI art
+          </motion.p>
+          <motion.div className="motion img" layout>
+            <img src="/illustrations/wngpng_0.png" alt="illustration of eery faces" />
+          </motion.div>
+        </motion.div>
         <div className="section intro" id='intro'>
           <div className="titled-paragraph">
             <h2>On art and artificial intelligence</h2>
@@ -202,7 +205,7 @@ export default function HomePage() {
             <span className="right">2024 May ● Wing Pang © <a href="www.wingpang.com">www.wingpang.com</a></span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </home-page>
   );
 }

@@ -67,5 +67,14 @@
     }
     h1, h2, blockquote {
         text-wrap: balance;
+        font-family: 'grafier', serif;
+        margin: 0;
+    }
+    h1, blockquote {
+        transition: all, .5s;
+    }
+    .new-line {
+        white-space: pre-line;
+        display: block;
     }
 }
