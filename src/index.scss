@@ -6,16 +6,6 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: grafier;
-  src: url('../public/fonts/PPGrafier-BoldDisplay.woff2') format('woff2');
-  font-weight: 700;
-}
-@font-face {
-  font-family: grafier;
-  src: url('../public/fonts/PPGrafier-BlackDisplay.woff2') format('woff2');
-  font-weight: 900;
-}
-@font-face {
   font-family: neue-machina;
   src: url('../public/fonts/PPNeueMachina-PlainLight.woff2') format('woff2');
   font-weight: 300;
@@ -74,6 +64,7 @@
 // Colours
 $bg-primary: #0400C0;
 $text-primary: white;
+$text-secondary: #FFE608;
 
 // Universal styles
 body {
@@ -83,6 +74,11 @@ body {
   font-family: 'neue-machina', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: 'grafier';
+  margin: 0;
 }
 
 a {

@@ -1,0 +1,44 @@
+@use './index.scss' as global;
+@use './mixins.scss' as mixins;
+
+@mixin home-page-base(){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 100%;
+    }
+    .main-grid {
+        @include mixins.main-grid();
+        height: 100%;
+        width: 100%;
+    }
+    .section {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+        grid-column: 1/13;
+        grid-row: span 13;
+    }
+    .furniture {
+        display: flex;
+        color: global.$text-secondary;
+        a {
+            color: global.$text-secondary;
+        }
+    }
+    .titled-paragraph {
+        display: flex;
+        h2 {
+            font-family: 'neue-machina';
+            font-size: 1rem;
+            color: global.$text-secondary;
+            font-weight: 500;
+        }
+    }
+    .section.title {
+        .caption {
+            color: global.$text-secondary;
+        }
+    }
+}
