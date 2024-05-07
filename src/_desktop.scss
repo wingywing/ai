@@ -13,6 +13,7 @@
         }
         .section.title {
             h1 {
+                grid-row: 3 / span 10;
                 font-size: 8rem;
             }
             .furniture {
