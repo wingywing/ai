@@ -52,4 +52,11 @@
             font-family: 'source-sans-pro', sans-serif;
         }
     }
+    .section.images {
+        .ai-images {
+            grid-column: 1/13;
+            display: grid;
+            z-index: -1;
+        }
+    }
 }
