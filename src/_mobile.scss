@@ -5,6 +5,13 @@
     .titled-paragraph  {
         flex-direction: column;
     }
+    blockquote {
+        font-family: 'grafier';
+        font-size: 2rem;
+        line-height: 120%;
+        margin: 0;
+
+    }
     .section.title {
         grid-row: 2 / span 10;
         .furniture {
@@ -40,6 +47,18 @@
     }
     .section.intro {
         grid-row: span 12;
-
+        .titled-paragraph, blockquote, .attribution {
+            grid-column: 2/12;
+        }
+        .titled-paragraph {
+            grid-row: span 5;
+        }
+        blockquote {
+            grid-row: 7 / span 4;
+        }
+        .attribution {
+            grid-row: 11;
+            text-align: end;
+        }
     }
 }
