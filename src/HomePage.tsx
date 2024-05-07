@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <home-page>
       <div className="main-grid">
-        <div className="section title">
+        <div className="section title" id='title'>
           <div className="furniture">
             <span className="left">
               2024 May ● Wing Pang ©{" "}
@@ -44,7 +44,7 @@ export default function HomePage() {
           </p>
           <img src="/illustrations/wngpng_0.png" alt="illustration of eery faces" />
         </div>
-        <div className="section intro">
+        <div className="section intro" id='intro'>
           <div className="titled-paragraph">
             <h2>On art and artificial intelligence</h2>
             <div>
@@ -60,7 +60,7 @@ export default function HomePage() {
             (Morriss-Kay, 2010)
           </div>
         </div>
-        <div className="section experiment">
+        <div className="section experiment" id='experiment'>
           <div className="titled-paragraph">
             <h2>The experiment</h2>
             <div className="paragraphs">
@@ -98,7 +98,7 @@ export default function HomePage() {
             getImages()
           }
         </div>
-        <div className="section who">
+        <div className="section who" id='who'>
           <p className="attribution">
             Above: the 17 illustrations I used to train the image model.
           </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
           </div>
           </div>
         </div>
-        <div className="section popup">
+        <div className="section popup" id='popup'>
           <div className="mobile sd-screenshot">
             <img src="/stable-diff-mobile.png" alt="Screenshot of stable diffusion mobile interface"/>
             <span>in the style of wngpng</span>
@@ -153,7 +153,7 @@ export default function HomePage() {
             loaded
           </p>
         </div>
-        <div className="section images">
+        <div className="section images" id='images'>
           <div className="ai-images">
             {
               getAIImages()
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="section conclusion">
+        <div className="section conclusion" id='conclusion'>
           <p className="attribution">
           Images generated with a custom model of Stable Diffusion trained on my own artworks, 05/05/2024. 
           </p>
