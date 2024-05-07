@@ -65,4 +65,7 @@
             text-underline-offset: .3rem;
         }
     }
+    h1, h2, blockquote {
+        text-wrap: balance;
+    }
 }
