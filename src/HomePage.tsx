@@ -39,7 +39,7 @@ export default function HomePage() {
             </span>
             <span className="right">Practice-led research</span>
           </div>
-          <h1>“In the <span className="new-line mobile tablet desktop"/>style <span className="new-line desktop"/>of <span className="new-line tablet desktop"/>wngpng”</h1>
+          <h1>“In&nbsp;the <span className="new-line mobile tablet desktop"/>style <span className="new-line desktop"/>of <span className="new-line tablet desktop"/>wngpng”</h1>
           <motion.p layout className="caption">
             Fears and <span className="new-line"/> reflections on the <span className="new-line"/>ethics of AI art
           </motion.p>
