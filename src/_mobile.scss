@@ -2,6 +2,10 @@
 @use './mixins.scss' as mixins;
 
 @mixin home-page-mobile(){
+    .desktop {
+        display: none;
+        visibility: hidden;
+    }
     .titled-paragraph  {
         flex-direction: column;
     }
@@ -23,6 +27,11 @@
         align-items: center;
         grid-column: 2/12;
     }
+    .attribution {
+        margin: 0;
+    }
+
+    //Section styles
     .section.title {
         grid-row: 2 / span 10;
         .furniture {
@@ -160,7 +169,6 @@
         grid-row: span 15;
         .attribution, h2, .left, .right, .paragraphs {
             grid-column: 2/12;
-            margin: 0;
         }
         h2 {
             font-size: 3rem;
@@ -170,6 +178,33 @@
         }
         .paragraphs {
             grid-row: 6 / span 8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .section.popup {
+        grid-row: span 11;
+        .attribution {
+            grid-column: 2/12;
+            justify-self: center;
+        }
+        .sd-screenshot.mobile {
+            grid-column: 2/12;
+            grid-row: 1 / span 9;
+            max-width: 32ch;
+            margin-left: -.35rem;
+            justify-self: center;
+            position: relative;
+            span {
+                position: absolute;
+                left: 2.9rem;
+                font-size: .86rem;
+                bottom: 16.5rem;
+            }
         }
     }
 }

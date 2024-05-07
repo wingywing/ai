@@ -140,6 +140,14 @@ export default function HomePage() {
           </div>
         </div>
         <div className="section popup">
+          <div className="mobile sd-screenshot">
+            <img src="/stable-diff-mobile.png" alt="Screenshot of stable diffusion mobile interface"/>
+            <span>in the style of wngpng</span>
+          </div>
+          <div className="desktop sd-screenshot" >
+            <img src="/stable-diff-desktop.png" alt="Screenshot of stable diffusion desktop interface"/>
+            <span>in the style of wngpng</span>
+          </div>
           <p className="attribution">
             Stable Diffusion Web UI with my custom .safetensors checkpoint
             loaded

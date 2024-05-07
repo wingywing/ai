@@ -3,6 +3,13 @@
 
 @mixin home-page-desktop(){
     @include mixins.desktop {
-        
+        .desktop {
+            display: block;
+            visibility: visible;
+        }
+        .mobile {
+            display: none;
+            visibility: hidden;
+        }
     }
 }

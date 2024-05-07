@@ -60,6 +60,11 @@
   font-weight: 800;
   font-style: italic;
 }
+@font-face {
+  font-family: source-sans-pro;
+  src: url('../public/fonts/SourceSansPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
 
 // Colours
 $bg-primary: #0400C0;
