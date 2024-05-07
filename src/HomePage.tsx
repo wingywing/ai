@@ -39,7 +39,7 @@ export default function HomePage() {
             </span>
             <span className="right">Practice-led research</span>
           </div>
-          <h1>“In&nbsp;the <span className="new-line mobile tablet desktop"/>style <span className="new-line desktop"/>of <span className="new-line tablet desktop"/>wngpng”</h1>
+          <h1>“In&nbsp;the <span className="new-line"/>style <span className="new-line desktop"/>of <span className="new-line tablet desktop"/>wngpng”</h1>
           <motion.p layout className="caption">
             Fears and <span className="new-line"/> reflections on the <span className="new-line"/>ethics of AI art
           </motion.p>
@@ -49,7 +49,7 @@ export default function HomePage() {
         </motion.div>
         <div className="section intro" id='intro'>
           <div className="titled-paragraph">
-            <h2>On art and artificial intelligence</h2>
+            <h2>On art and <span className="new-line tablet"/>artificial <span className="new-line tablet"/>intelligence</h2>
             <div>
               <p>Ever since I could remember, I have been drawing—putting colour on the page and scribbling out fragments of how I viewed my world. </p>
               <p>I've always loved seeing the art of other people, giving me a glimpse into their minds, a window into their worlds. And indeed, art is said to be a definitive characteristic of the human species by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2815939/">Professor Gillian Morriss-Kay from Oxford University (2010)</a>.</p>
@@ -65,7 +65,7 @@ export default function HomePage() {
         </div>
         <div className="section experiment" id='experiment'>
           <div className="titled-paragraph">
-            <h2>The experiment</h2>
+            <h2>The <span className="new-line tablet"/>experiment</h2>
             <div className="paragraphs">
               <p>
                 Like many artists, the idea that my artworks and art
