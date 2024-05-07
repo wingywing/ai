@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function HomePage() {
+  // Function for getting self-made illustrations
   const getImages = () => {
     var images: JSX.Element[] = []
     for ( var i=1; i<=17; i++) {
@@ -12,6 +13,7 @@ export default function HomePage() {
       {images}
     </>
   }
+  // Function for getting AI-generated images
   const getAIImages = () => {
     var images: JSX.Element[] = []
     for ( var i=1; i<=60; i++) {
@@ -25,7 +27,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="home-page">
+    <home-page>
       <div className="main-grid">
         <div className="section title">
           <div className="furniture">
@@ -184,6 +186,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-    </div>
+    </home-page>
   );
 }

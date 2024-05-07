@@ -1,0 +1,95 @@
+// Font imports
+
+@font-face {
+  font-family: grafier;
+  src: url('../public/fonts/PPGrafier-RegularDisplay.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: grafier;
+  src: url('../public/fonts/PPGrafier-BoldDisplay.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: grafier;
+  src: url('../public/fonts/PPGrafier-BlackDisplay.woff2') format('woff2');
+  font-weight: 900;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainLight.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainMedium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainMediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainRegular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainThin.woff2') format('woff2');
+  font-weight: 100;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainUltrabold.woff2') format('woff2');
+  font-weight: 800;
+}
+@font-face {
+  font-family: neue-machina;
+  src: url('../public/fonts/PPNeueMachina-PlainUltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+// Colours
+$bg-primary: #0400C0;
+$text-primary: white;
+
+// Universal styles
+body {
+  color: $text-primary;
+  background-color: $bg-primary;
+  margin: 0;
+  font-family: 'neue-machina', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $text-primary;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
