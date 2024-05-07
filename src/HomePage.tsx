@@ -93,10 +93,10 @@ export default function HomePage() {
                 extra training data.
               </p>
             </div>
-            {
-            getImages()
-            }
           </div>
+          {
+            getImages()
+          }
         </div>
         <div className="section who">
           <p className="attribution">

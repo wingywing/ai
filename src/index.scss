@@ -68,6 +68,7 @@ $text-secondary: #FFE608;
 
 // Universal styles
 body {
+  text-wrap: pretty;
   color: $text-primary;
   background-color: $bg-primary;
   margin: 0;
