@@ -93,7 +93,7 @@ export default function HomePage() {
           <motion.div className="furniture">
             <motion.span className="left">
               2024 May ● Wing Pang ©{" "}
-              <a href="www.wingpang.com">www.wingpang.com</a>
+              <a href="https://www.wingpang.com">www.wingpang.com</a>
             </motion.span>
             <motion.span className="right">Practice-led research</motion.span>
           </motion.div>
@@ -497,7 +497,7 @@ export default function HomePage() {
             <motion.span className="left">Practice-led research</motion.span>
             <motion.span className="right">
               2024 May ● Wing Pang ©{" "}
-              <a href="www.wingpang.com">www.wingpang.com</a>
+              <a href="https://www.wingpang.com">www.wingpang.com</a>
             </motion.span>
           </motion.div>
         </motion.div>
