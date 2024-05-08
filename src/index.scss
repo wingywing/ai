@@ -1,3 +1,5 @@
+@use './mixins.scss' as mixins;
+
 // Font imports
 
 @font-face {
@@ -76,10 +78,39 @@ body {
   text-wrap: pretty;
   color: $text-primary;
   background-color: $bg-primary;
+  background-color:hsla(0,100%,50%,1);
+  background-image:
+    radial-gradient(at 37% 91%, hsla(240,61%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 67% 38%, hsla(250,87%,36%,1) 0px, transparent 50%),
+    radial-gradient(at 38% 41%, hsla(258,86%,37%,1) 0px, transparent 50%),
+    radial-gradient(at 43% 10%, hsla(340,51%,17%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 94%, hsla(64,55%,4%,1) 0px, transparent 50%),
+    radial-gradient(at 70% 76%, hsla(240,75%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 97% 72%, hsla(241,100%,37%,1) 0px, transparent 50%);
   margin: 0;
   font-family: 'neue-machina', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: 200% 200%;
+	animation: gradient 15s ease-in-out infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.noise {
+  @include mixins.noise();
+  pointer-events: none;
 }
 
 a {
