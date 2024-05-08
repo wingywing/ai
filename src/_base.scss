@@ -5,6 +5,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    max-height: 100dvh;
     img {
         max-width: 100%;
     }

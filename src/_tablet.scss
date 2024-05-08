@@ -3,6 +3,8 @@
 
 @mixin home-page-tablet(){
     @include mixins.tablet {
+        scroll-snap-type: y mandatory;
+
         .mobile {
             display: none;
             visibility: hidden;
@@ -12,6 +14,7 @@
             visibility: visible;
         }
         .section {
+            scroll-snap-align: center;
             &.title, &.intro, &.experiment, &.who, &.popup, &.images, &.conclusion {
                 grid-row: span 13;
             }
