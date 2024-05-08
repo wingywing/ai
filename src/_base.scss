@@ -1,6 +1,9 @@
 @use './index.scss' as global;
 @use './mixins.scss' as mixins;
 
+@import 'typed';
+
+
 @mixin home-page-base(){
     width: 100%;
     display: flex;
@@ -80,4 +83,12 @@
         white-space: pre-line;
         display: block;
     }
+
+    .typing{
+        @include typed("in the style of wngpng", null, (iterations: 1));
+        &::after {
+            border-right-width: 2px;
+        }
+    }
+
 }

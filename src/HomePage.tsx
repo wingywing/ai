@@ -1,15 +1,30 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./home-page.scss";
 import {
-  MotionValue,
   motion,
-  useScroll,
-  useSpring,
-  useTransform,
+  useInView,
 } from "framer-motion";
 
 export default function HomePage() {
   // Scroll animations
+  // Create a ref to observe using the useInView hook
+  const ref = useRef(null);
+  
+  // useInView returns a boolean and a ref. The boolean indicates whether the element is in view.
+  const isInView = useInView(ref);
+
+  useEffect(() => {
+    // Access the current ref directly
+    const element = ref.current;
+    if (element && isInView) {
+      // Add 'typing' class only when the element is in view
+      element.classList.add('typing');
+    } else if (element) {
+      // Optionally remove the class when the element is not in view
+      element.classList.remove('typing');
+    }
+  }, [isInView]); // Depend on isInView to re-run effect
+
   const fadeUpAnimationVariants = {
     initial: {
       opacity: 0,
@@ -315,14 +330,14 @@ export default function HomePage() {
               src="/stable-diff-mobile.png"
               alt="Screenshot of stable diffusion mobile interface"
             />
-            <motion.span>in the style of wngpng</motion.span>
+            <motion.span ref={ref} className={isInView ? 'typing' : ''}></motion.span>
           </motion.div>
           <motion.div className="tablet sd-screenshot">
             <motion.img
               src="/stable-diff-desktop.png"
               alt="Screenshot of stable diffusion desktop interface"
             />
-            <motion.span>in the style of wngpng</motion.span>
+            <motion.span  className={isInView ? 'typing' : ''}></motion.span>
             <motion.p
               variants={fadeInAnimationVariants}
               initial="initial"
