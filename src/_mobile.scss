@@ -223,8 +223,8 @@
         .ai-images {
             grid-template-columns: repeat(5, minmax(0, 1fr));
             img {
-                height: 100%;
                 width: 100%;
+                height: calc(100%/6);
                 object-fit: cover;
             }
         }
