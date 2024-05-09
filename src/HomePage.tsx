@@ -516,6 +516,20 @@ export default function HomePage() {
             </motion.span>
           </motion.div>
         </motion.div>
+        <motion.div className="section references" id="references">
+          <h2>Reference List</h2>
+          <motion.ul>
+          <motion.li>
+              Bridle, J. (2023). <i>The stupidity of AI</i>. The Guardian. <a href="https://www.theguardian.com/technology/2023/mar/16/the-stupidity-of-ai-artificial-intelligence-dall-e-chatgpt">https://www.theguardian.com/technology/2023/mar/16/the-stupidity-of-ai-artificial-intelligence-dall-e-chatgpt</a>
+            </motion.li>
+            <motion.li>
+              Hunger, F. (2023). <i>Unhype Artificial 'Intelligence'! A proposal to replace the deceiving terminology of AI</i>. Zenodo. <a href="https://doi.org/10.5281/zenodo.7524493">https://doi.org/10.5281/zenodo.7524493</a>
+            </motion.li>
+            <motion.li>
+              Morriss-Kay G. M. (2010). The evolution of human artistic creativity. <i>Journal of anatomy</i>, 216(2), 158–176. <a href="https://doi.org/10.1111/j.1469-7580.2009.01160.x">https://doi.org/10.1111/j.1469-7580.2009.01160.x</a>
+            </motion.li>
+          </motion.ul>
+        </motion.div>
       </motion.div>
     </home-page>
   );

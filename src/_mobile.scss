@@ -286,4 +286,29 @@
             }
         }
     }
+    .section.references{
+        h2, ul {
+            grid-column: 2/12;
+        }
+        h2 {
+            grid-row: 2;
+            align-self: flex-end;
+        }
+        ul {
+            grid-row: 3 / span 10;
+            grid-auto-rows: min-content;
+            padding: 0;
+            list-style: none;
+            li {
+                max-width: 56ch;
+                padding-left: 1rem;
+                text-indent: -1rem;
+                margin-inline: 0;
+                margin-bottom: 1rem;
+                a {
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
 }
